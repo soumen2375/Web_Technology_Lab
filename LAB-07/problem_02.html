@@ -1,0 +1,99 @@
+<!-- write a script to pepare a survey from -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="problem_02.css">
+</head>
+<body>
+  
+<div class="form">
+ <form action="problem_02.php" method="POST"><b>
+    <h1><center>Survey Form</center></h1>
+
+    <table>
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" id="name" name="myname" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><select name="gender">
+                <option selected>select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td> <input type="date" id="dob" name="dob"></td>
+        </tr>
+        <tr>
+            <td><label for="Country">Country:</label></td>
+            <td> <select name="country" id="Country">
+                <option selected>Select an option</option>
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="others">Others</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Favourite color</td>
+            <td> <input type="radio" name="color" id="red" value="red">
+                <label for="red">Red</label>
+                <input type="radio" name="color" id="blue" value="blue">
+                <label for="blue">Blue</label>
+                <input type="radio" name="color" id="Green" value="Green">
+                <label for="Green">Green</label>
+                <input type="radio" name="color" id="Yellow" value="Yellow">
+                <label for="Yellow">Yellow</label></td>
+        </tr>
+        <tr>
+            <td>Favourite foods</td>
+            <td><input type="checkbox" name="food" id="Biriyani" value="Biriyani">
+                <label for="Biriyani">Biriyani</label>
+                <input type="checkbox" name="food" id="Chowmein" value="Chowmein">
+                <label for="Chowmein">Chowmein</label>
+                <input type="checkbox" name="food" id="Fuchka" value="Fuchka">
+                <label for="Fuchka">Fuchka</label>
+                <input type="checkbox" name="food" id="ice-cream" value="ice-cream">
+                <label for="ice-cream">ice-cream</label>
+                <input type="checkbox" name="food" id="Chocolate" value="Chocolate">
+                <label for="Chocolate">Chocolate</label></td>
+        </tr>
+        <tr>
+            <td><label for="income">Monthly income</label></td>
+            <td> <input type="range" id="income" name="income" min="10000" max="100000" step="5000" value="15000"></td>
+        </tr>
+        <!-- <tr>
+            <td><label for="message">Message:</label></td>
+            <td><textarea id="message" name="message" cols="27" rows="4" placeholder="Write your message..."></textarea></td>
+        </tr> -->
+    </table>
+
+    <br>
+    <br>
+
+
+    <div>
+        <input type="checkbox" id="terms" checked>
+        <label for="terms">Yes, I agree to the terms and conditions.</label>
+        
+        <input type="submit">
+       <!-- <button type="submit">Submit</button> -->
+       <button type="reset">Reset</button>
+    </div>
+   
+   </b>
+ </form>
+</div>
+
+
+</body>
+</html>

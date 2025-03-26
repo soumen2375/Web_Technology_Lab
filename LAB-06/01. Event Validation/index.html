@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+    <div>
+        <h3>Onclick</h3>
+        <button onclick="myclick()">Onclick</button>
+        <script>
+            function myclick()
+            {
+                alert("You have succesfully completed the click event");
+            }
+        </script>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Onload</h3>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Onwheel</h3>
+        <p id="mywheel" >Mouse Wheel</p>
+        <script>
+            var para = document.getElementById("mywheel")
+            para.addEventListener("wheel", wheelFunction);
+
+            function wheelFunction()
+            {
+                para.style.fontSize = "50px";
+            }
+        </script>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Onselect</h3>
+        <input type="text" onselect="selectFunction()"> 
+
+        <p id="myselect"></p>
+        <script>
+            function selectFunction()
+            {
+                document.getElementById("myselect").innerHTML="Selected👍😎";
+            }
+        </script>
+    </div>
+    <hr>
+
+    <div>
+        <h3>oninput</h3>
+        <input type="text" id="myinput" oninput="inputFunction()">
+        <p id="demoWrite"></p>
+
+        <script>
+            function inputFunction()
+            {
+                var text = document.getElementById("myinput").value;
+                if(text !== ''){
+                    document.getElementById("demoWrite").innerHTML="Wrote Text: "+text;
+                }
+                else{
+                    document.getElementById("demoWrite").innerHTML=''
+                }
+            }
+        </script>
+    </div>
+    <hr>
+
+    <div>
+        <h3>oninvalid</h3>
+        
+    </div>
+    <hr>
+    <div>
+        <h3>onreset</h3>
+    </div>
+    <hr>
+    <div>
+        <h3>Onselect</h3>
+    </div>
+    <hr>
+    <div>
+        <h3>onsubmit</h3>
+    </div>
+    <hr>
+    <div>
+        <h3>oncut oncopy onpaste</h3>
+    </div>
+    <hr>
+    <div>
+        <h3>Resist cut copy paste</h3>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="password" id="myPassword">
+        <button type="submit">Sumbmit</button>
+    </form>
+    <script>
+        document.getElementById("myForm").
+        addEventListener("submit", function(event){
+
+            let x=document.getElementById("myPassword").value;
+            let pattern= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
+            if(!pattern.test(x))
+            {
+                alert("Check password format");
+                event.preventDefault();
+            }
+
+         }
+        )
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,27 @@
+.form{
+    height: 300px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 40px;
+    
+    margin: 2px;
+    color: #F5ECE0;
+    background-color: #572d9a;
+    font-size: 20px;
+    
+}
+
+.table{
+    padding: 20px 20px 20px 60px;
+}
+
+h3{
+    color: #F6DC43;
+    text-align: center;
+   
+}
+
+.submit_button{
+    text-align: center;
+    align-items: center;
+}
