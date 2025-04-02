@@ -1,31 +1,43 @@
-.form{
-    height: 300px;
-    width: 400px;
-    border: 2px solid black;
+body {
+    /* text-align: center; */
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    color: #F6DC43;
+    text-align: center;
+    
+
+}
+.form {
+    height: 250px;
+    width: 350px;
     border-radius: 40px;
     
-    margin: 2px; 
+   
     color: hsl(34, 51%, 92%);
     background-color: #572d9a;
     font-size: 20px;
 
-}
-
-
-
-.table{
-    padding: 20px 20px 20px 60px;
-    /* display:flex;
-    justify-content: center; */
-}
-
-h3{
-    color: #F6DC43;
-    text-align: center;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .submit_button{
     text-align: center;
     align-items: center;
+}
+
+#submit_id{
+    color:white ;
+    background-color: blue;
+}
+
+input{
+    border-style: none;
+    padding: 10px;
+    border-radius: 15px;
 }
